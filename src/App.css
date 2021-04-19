@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+body h1{
+  font-family: 'Sen', sans-serif;
+  text-transform: uppercase;
+}
+body h2, h3, h4, h5, h6, p{
+  font-family: 'Sen', sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

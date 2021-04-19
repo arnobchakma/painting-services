@@ -1,0 +1,16 @@
+.image-sizing{
+    width: 80px;
+}
+.button-style {
+    width: 130px;
+    padding: 7px;
+    background-color: #c71b9c;
+    border: none;
+    color:white;
+    transition: 0.5s all
+}
+.button-style:hover{
+    transform:scale(0.8);
+    border: violet;
+    background: tomato;
+}

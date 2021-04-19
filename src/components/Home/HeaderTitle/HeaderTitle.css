@@ -1,0 +1,41 @@
+.wrapper{
+    width: 100%;
+}
+.title {
+    font-size: 50px;
+}
+.title-2 {
+    font-size: 38px;
+    margin-right: 180px;
+    text-align:center;
+    margin-left:170px;
+    font-family: 'Sen', sans-serif;
+}
+.title-3 {
+    font-size: 50px;
+    margin-right: 180px;
+    text-align:center;
+    margin-left:170px;
+    font-family: 'Tangerine', cursive;
+}
+button.button {
+    padding: 10px;
+    background: none;
+    border: 2px solid white;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.right-btn {
+    background: orange;
+    padding: 12px;
+    border: none;
+    color: white;
+    transition: 0.5s all;
+}
+.right-btn:hover{
+    background: white;
+    color:orange;
+    transform: scale(1.2)
+
+}
