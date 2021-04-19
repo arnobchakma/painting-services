@@ -20,13 +20,13 @@ const AllAdmins = () => {
             </div>
             <div className="col-md-9 ">
                <div id="deleteTable">
-                  <h3 className="mt-3 fw-bold font-color">Manage Admin Panel</h3>
+                  <h3 className="mt-3 fw-bold font-color">Admin Panel</h3>
                   <Table bordered>
                      <thead>
                         <tr>
                            <th>Name</th>
                            <th>Email</th>
-                           <th>Action</th>
+                           <th>Edit And Delete</th>
                         </tr>
                      </thead>
                      <tbody>

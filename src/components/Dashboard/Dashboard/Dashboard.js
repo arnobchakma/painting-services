@@ -20,7 +20,7 @@ const Dashboard = () => {
                <Sidebar></Sidebar>
             </div>
             <div className="col-md-6 ">
-               <h5 className="mt-2 fw-bold">ORDER FORM:</h5>
+               <h5 className="mt-2 fw-bold font-color">ORDER By:</h5>
                <input
                   className="p-1 m-1 w-50"
                   type="text"

@@ -48,10 +48,10 @@ const AddReview = () => {
             </div>
 
             <div className="col-md-9 mt-2">
-               <h5 className="font-color">GET FREE QUOTE </h5>
+               <h5 className="font-color">Add Your Opinion </h5>
 
                <form onSubmit={handleSubmit(onSubmit)}>
-                  <label className="form-label">Author:</label>
+                  <label className="form-label">Your Name:</label>
                   {errors.author && <span>This field is required</span>}
                   <input
                      {...register('author', { required: true })}
@@ -59,7 +59,7 @@ const AddReview = () => {
                      className="form-control"
                   />
 
-                  <label className="form-label">Position:</label>
+                  <label className="form-label">Your Position:</label>
                   {errors.position && <span>This field is required</span>}
                   <input
                      {...register('position', { required: true })}
@@ -67,7 +67,7 @@ const AddReview = () => {
                      className="form-control"
                   />
                   
-                  <label className="form-label">Description:</label>
+                  <label className="form-label">Add Your Review:</label>
                   <textarea
                      {...register('description', { required: true })}
                      className="form-control"

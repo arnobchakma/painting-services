@@ -31,7 +31,7 @@ const MyOrder = () => {
             </div>
 
             <div className="col-md-9">
-               <h3 className="mt-3 fw-bold">Order's History</h3>
+               <h3 className="mt-3 fw-bold">Order Details</h3>
                <Table bordered>
                   <thead>
                      <tr>

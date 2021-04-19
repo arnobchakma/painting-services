@@ -60,7 +60,7 @@ const Sidebar = () => {
 
                <li>
                   <Link to="/order" className="text-white text-decoration-none">
-                     <FontAwesomeIcon icon={faJediOrder} /> Client Order
+                     <FontAwesomeIcon icon={faJediOrder} /> Order Details
                   </Link>
                </li>
 
@@ -108,7 +108,7 @@ const Sidebar = () => {
                      to="/myOrder"
                      className="text-white text-decoration-none"
                   >
-                     <FontAwesomeIcon icon={faJediOrder} /> My Order
+                     <FontAwesomeIcon icon={faJediOrder} /> Added Orders
                   </Link>
                </li>
                <li>

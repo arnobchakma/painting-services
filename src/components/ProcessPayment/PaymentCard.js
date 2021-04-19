@@ -66,9 +66,9 @@ const PaymentCard = ({ service }) => {
 
    return (
       <form onSubmit={handleSubmit}>
-         <p className="my-3" >Pay With Card:</p>
+         <p className="my-3" >Pay With VisaCard:</p>
          <label>
-            Card number
+            Card Number
             <CardNumberElement
                options={options}
                onReady={() => {
@@ -87,7 +87,7 @@ const PaymentCard = ({ service }) => {
          </label>
          <br />
          <label className="my-3">
-            Expiration date
+            Expire date
             <CardExpiryElement
                options={options}
                onReady={() => {
