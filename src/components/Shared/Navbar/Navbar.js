@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
    return (
       <section>
-         <div>
+         <div className="text">
             <Navbar className="navbar-color" expand="lg">
                <Navbar.Brand as={Link} to="/home">
-                  <h4 className="text-white">PAINTING SERVICES</h4>
+                  <h4 className="text">PAINTING SERVICES</h4>
                </Navbar.Brand>
                <Navbar.Toggle aria-controls="basic-navbar-nav" />
                <Navbar.Collapse id="basic-navbar-nav">
