@@ -5,5 +5,5 @@
 #### There are two admin have been created here, one of the admin and the other for the users.
 #### Admin can add any services if he desired.
 #### If the admin wants, he can make anyone an admin with his email.
-#### And he can delee any product if he wants.
+#### And he can delete any product if he wants.
 Finally the users can give review if he wants.
