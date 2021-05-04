@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import FooterDetails from '../FooterDetails/FooterDetails';
+import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
     const info = [
@@ -50,9 +51,11 @@ const Footer = () => {
                         </div>
                     </FooterDetails>
                 </div>
-                <div className="copyRight text-center font-color">
-                    <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
-                </div>
+                <Fade left>
+                    <div className="copyRight text-center font-color">
+                        <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
+                    </div>
+                </Fade>
             </div>
         </footer>
     );
