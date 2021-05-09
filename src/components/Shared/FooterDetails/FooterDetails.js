@@ -7,10 +7,10 @@ const FooterDetails = (props) => {
     return (
         <Fade bottom>
             <div className="col-md-3">
-                <h5 className="font-color">{props.menuTitle ? props.menuTitle : " "}</h5>
+                <h5 className="text-white">{props.menuTitle ? props.menuTitle : " "}</h5>
                 <ul className="list-unstyled mt-4">
                     {
-                        props.menuItems.map((item, index) => <li key={index}><Link className="text-decoration" to={item.link} >{item.name}</Link></li>)
+                        props.menuItems.map((item, index) => <li key={index}><Link className="text-secondary" to={item.link} >{item.name}</Link></li>)
                     }
                 </ul>
                 {props.children && props.children}

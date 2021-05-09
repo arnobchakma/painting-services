@@ -47,12 +47,12 @@ const Footer = () => {
                     <FooterDetails key={3} menuTitle="Special Services" menuItems={specialServices}/>
                     <FooterDetails key={4} menuTitle="Customer" menuItems={customer}> 
                         <div className="mt-5">
-                            <button className="btn button-style">Call now</button>
+                            <button className="button-style">Call now</button>
                         </div>
                     </FooterDetails>
                 </div>
                 <Fade left>
-                    <div className="copyRight text-center font-color">
+                    <div className="copyRight text-center text-white">
                         <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
                     </div>
                 </Fade>

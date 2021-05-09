@@ -37,7 +37,7 @@ const Login = () => {
         });
             }
     return (
-        <div className="container mt-5 ">
+        <div className="container">
             <div className="text-center login-wrapper">
                 <h3 className="p-5">Login With</h3>
                 <button className="button-style mb-2" onClick={handleGoogleSignIn}>Google Login</button>

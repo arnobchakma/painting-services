@@ -9,7 +9,7 @@ const NavBar = () => {
             <div className="container">
                <Navbar>
                   <Navbar.Brand as={Link} to="/home">
-                     <h4 className="text">PAINTING SERVICES</h4>
+                     <h4 className="text">P SERVICES</h4>
                   </Navbar.Brand>
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">

@@ -8,17 +8,24 @@ const HeaderTitle = () => {
         <div className="container">
             <div className="text-center text-white ">
                 <div className="pt-5">
-                    <Fade left><h1 className="title pt-5">Painting Services</h1></Fade>
-                    <Fade right><h2 className="title-2">World Best Painting Services</h2></Fade>
-                    <Typical
-                    className="text-white typical"
-                        steps={['', 1000, 'We are always trying to best to satisfied our customer', 800]}
-                        loop={Infinity}
-                    />
+                    <Fade right><h3 className="title-2 pt-5">Welcome To</h3></Fade>
+                    
+                    <h1 className="title">
+                        <Typical
+                        className="text-white typical"
+                            steps={['', 1000, 'PAINTING SERVICE', 900]}
+                            loop={Infinity}
+                        />
+                    </h1>
+                    <h5 className="mb-4">We are always trying to best to satisfied our customer</h5>
                 </div>
+                
                 <div>
-                    <button className="button">VIEW MORE DETAILS</button>
-                    <button className="right-btn"><a href="https://arnob-portfolio.web.app/">VIEW PORTFOLIO</a> </button>
+                    <button className="button ml-4 download-resume">
+                            <a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1S6xBgYFqUmpZB6FLZfgvGb4e4eyBSgje">Download My Resume</a>
+                    </button>
+                    
+                    <button className="right-btn"><a href="https://arnob-portfolio.web.app/">See my portfolio</a> </button>
                 </div>
             </div>
         </div>

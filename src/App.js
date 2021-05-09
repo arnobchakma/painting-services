@@ -28,51 +28,53 @@ function App() {
 
   return (
     <UserContext.Provider value ={[loggedInUser, setLoggedInUser]}>
-      <Router>
-        <NavBar></NavBar>
-        <Switch>
-        <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <PrivateRoute path="/addService">
-            <AddService></AddService>
-          </PrivateRoute>
-          <PrivateRoute path="/common">
-            <CommonBar></CommonBar>
-          </PrivateRoute>
-          <PrivateRoute path="/services">
-            <Services></Services>
-          </PrivateRoute>
-          <PrivateRoute path="/addAnAdmin">
-            <AddAdmin></AddAdmin>
-          </PrivateRoute>
-          <PrivateRoute path="/adminPanel">
-            <AllAdmins></AllAdmins>
-          </PrivateRoute>
-          <PrivateRoute path="/review">
-            <Testimonial></Testimonial>
-          </PrivateRoute>
-          <PrivateRoute path="/placeOrder">
-            <Dashboard></Dashboard>
-          </PrivateRoute>
-          <PrivateRoute path="/myOrder">
-            <MyOrder></MyOrder>
-          </PrivateRoute>
-          <PrivateRoute path="/order">
-            <Orders></Orders>
-          </PrivateRoute>
-          <Route path="/addReview">
-            <AddReview></AddReview>
-          </Route>
-          
-        </Switch>
-      </Router>
+      <div className="main-wrapper">
+        <Router>
+          <NavBar></NavBar>
+          <Switch>
+          <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/addService">
+              <AddService></AddService>
+            </PrivateRoute>
+            <PrivateRoute path="/common">
+              <CommonBar></CommonBar>
+            </PrivateRoute>
+            <PrivateRoute path="/services">
+              <Services></Services>
+            </PrivateRoute>
+            <PrivateRoute path="/addAnAdmin">
+              <AddAdmin></AddAdmin>
+            </PrivateRoute>
+            <PrivateRoute path="/adminPanel">
+              <AllAdmins></AllAdmins>
+            </PrivateRoute>
+            <PrivateRoute path="/review">
+              <Testimonial></Testimonial>
+            </PrivateRoute>
+            <PrivateRoute path="/placeOrder">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
+            <PrivateRoute path="/myOrder">
+              <MyOrder></MyOrder>
+            </PrivateRoute>
+            <PrivateRoute path="/order">
+              <Orders></Orders>
+            </PrivateRoute>
+            <Route path="/addReview">
+              <AddReview></AddReview>
+            </Route>
+            
+          </Switch>
+        </Router>
+      </div>
     </UserContext.Provider>
   );
 }
