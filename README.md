@@ -10,10 +10,10 @@
 
 ## Used Technologies
 - HTML
-- CSS
-- Javascript
-- Bootstrap
-- React
+  - CSS
+    - Javascript
+      - Bootstrap
+        - React
 - Node
 - MongoDB
 - Express
