@@ -1,6 +1,6 @@
 # [Paintiing Service](https://home-painting-d9605.web.app/)
 
-** About this project
+## About this project
 #### This website is a painting services website. 
 #### In this website if users click on any of the services he will have to login with google or others connection. 
 #### The user can buy that services by clicking on confirmation with her card number.
