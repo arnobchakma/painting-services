@@ -1,0 +1,19 @@
+.login-main {
+    width: 80%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.login-wrapper{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.login-tools{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.login-form{
+    padding: 55px;
+}

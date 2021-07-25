@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
-import Login from './components/Login/Login/Login';
+// import Login from './components/Login/Login/Login';
 import { createContext } from 'react';
 import { useState } from 'react';
 import NavBar from './components/Shared/Navbar/Navbar';
@@ -20,6 +20,8 @@ import Testimonial from './components/Home/Testimonial/Testimonial';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import MyOrder from './components/Orders/MyOrder';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
 
 export const UserContext = createContext();
 
@@ -40,6 +42,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/signup">
+              <Signup></Signup>
             </Route>
             <PrivateRoute path="/addService">
               <AddService></AddService>
