@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyD4qXqjAjLWp4cicVkDlAd2QI4ysKpe4HM",
-  authDomain: "vehicles-services.firebaseapp.com",
-  projectId: "vehicles-services",
-  storageBucket: "vehicles-services.appspot.com",
-  messagingSenderId: "755247287791",
-  appId: "1:755247287791:web:e3030b718f9e693144ba1a"
+  apiKey: "AIzaSyAfqSzE6P1YkHsJJplMgXLSIJLolkdbhc0",
+  authDomain: "home-painting-d9605.firebaseapp.com",
+  projectId: "home-painting-d9605",
+  storageBucket: "home-painting-d9605.appspot.com",
+  messagingSenderId: "440295843590",
+  appId: "1:440295843590:web:408827037526072cca2087"
 };
 
 export default firebaseConfig;
