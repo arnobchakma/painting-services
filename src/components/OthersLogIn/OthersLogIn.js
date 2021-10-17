@@ -27,7 +27,7 @@ const OthersLogIn = () => {
 
     const { isLoggedIn, result } = user;
     const googleProvider = new firebase.auth.GoogleAuthProvider();
-    var githubProvider = new firebase.auth.GithubAuthProvider();
+    const githubProvider = new firebase.auth.GithubAuthProvider();
 
     const handleSignUp = (provider) => {
         firebase.auth()

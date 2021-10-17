@@ -22,7 +22,7 @@ const HeaderTitle = () => {
                 
                 <div>
                     <button className="button ml-4 download-resume">
-                            <a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1S6xBgYFqUmpZB6FLZfgvGb4e4eyBSgje">Download My Resume</a>
+                            <a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1tCbGlK1deWIneCCLjukzuOLzkpgBdCZq">Download My Resume</a>
                     </button>
                     
                     <button className="right-btn"><a href="https://arnob-portfolio.web.app/">See my portfolio</a> </button>
