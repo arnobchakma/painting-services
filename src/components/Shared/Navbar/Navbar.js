@@ -1,35 +1,31 @@
 import React from 'react';
 import './Navbar.css';
-import { Nav, Navbar} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logo from '../../../image/logo/Coffee-logo-design-on-transparent-background-PNG.png';
 
 const NavBar = () => {
    return (
-      <section className="bg-dark">
-            <div className="container">
-               <Navbar>
-                  <Navbar.Brand as={Link} to="/home">
-                     <h4 className="text">P SERVICES</h4>
-                  </Navbar.Brand>
-                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                  <Navbar.Collapse id="basic-navbar-nav">
-                     <Nav className="ms-auto">
-                        <Nav.Link as={Link} to="/home">
-                           <span className="text-white"> Home</span>
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="/common">
-                           <span className="text-white mx-4"> Dashboard</span>
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="/addReview">
-                           <span className="text-white"> Review</span>
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="/login">
-                           <span className="text-white mx-4"> Login</span>
-                        </Nav.Link>
-                     </Nav>
-                  </Navbar.Collapse>
-               </Navbar>
+      <section className="navbar-background">
+         <div className="container">
+
+            {/* Navbar wrapper */}
+            <div className="d-flex align-items-center justify-content-between">
+               <div>
+                  <Link to="/">
+                     <div className='p-1'>
+                        <img className="image-width" src={logo} alt="" />
+                     </div>
+                  </Link>
+               </div>
+               <div className="d-flex">
+                  <Link className='text-white text-decoration-none' to="/home"> Home </Link>
+                  <Link className='px-5 text-white text-decoration-none' to="/common"> Dashboard </Link>
+                  <Link className='text-white text-decoration-none' to="/review"> Review </Link>
+                  <Link className='px-5 text-white text-decoration-none' to="/login"> Login </Link>
+               </div>
             </div>
+
+         </div>
       </section>
    );
 };

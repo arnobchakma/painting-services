@@ -1,17 +1,17 @@
-.wrapper{
-    width: 100%;
-}
 .title {
     font-family: 'sen', sans-serif;
     letter-spacing: 10px;
 }
+
 .title-2 {
-    font-size: 38px;
+    font-size: 35px;
+    text-transform: uppercase;
     margin-right: 180px;
     text-align:center;
     margin-left:170px;
     font-family: 'Sen', sans-serif;
 }
+
 .title-3 {
     font-size: 50px;
     margin-right: 180px;
@@ -19,6 +19,7 @@
     margin-left:170px;
     font-family: 'sen', sans-serif;
 }
+
 .button {
     padding: 10px;
     background: none;
@@ -37,7 +38,7 @@
 }
 
 .right-btn {
-    background: orange;
+    background: rgb(199, 27, 156);
     padding: 12px;
     border: none;
     border-radius: 6px;
@@ -46,9 +47,10 @@
     color: white;
     transition: 0.5s all;
 }
+
 .right-btn:hover{
     background: white;
-    color:orange;
+    color: rgb(199, 27, 156);
 
 }
 
@@ -56,10 +58,11 @@ button a {
     color:white;
     text-decoration: none;
 }
+
 button:hover a {
     color:black;
 }
 
 .typical {
-    font-size: 30px;   
+    font-size: 55px;   
 }

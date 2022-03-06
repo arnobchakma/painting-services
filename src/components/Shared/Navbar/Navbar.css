@@ -1,4 +1,7 @@
-.text {
-    font-family: 'Sen', sans-serif;
-    color:rgb(230, 230, 230)
+.navbar-background {
+    background-color: rgb(39, 35, 33);
+}
+
+.image-width {
+    width: 60px;
 }
