@@ -21,6 +21,7 @@ import MyOrder from './components/Orders/MyOrder';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
+import ScrollToTop from './components/scroll/ScrollToTop';
 
 export const UserContext = createContext();
 
@@ -28,12 +29,13 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState();
 
   return (
-    <UserContext.Provider value ={[loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <div className="main-wrapper">
         <Router>
+          <ScrollToTop />
           <NavBar></NavBar>
           <Switch>
-          <Route exact path="/">
+            <Route exact path="/">
               <Home></Home>
             </Route>
             <Route exact path="/home">
@@ -75,7 +77,7 @@ function App() {
             <Route path="/addReview">
               <AddReview></AddReview>
             </Route>
-            
+
           </Switch>
         </Router>
       </div>

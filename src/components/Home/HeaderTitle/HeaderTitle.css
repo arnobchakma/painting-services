@@ -1,6 +1,7 @@
 .title {
     font-family: 'sen', sans-serif;
     letter-spacing: 10px;
+    color: rgb(226, 226, 226);
 }
 
 .title-2 {
@@ -9,6 +10,7 @@
     margin-right: 180px;
     text-align:center;
     margin-left:170px;
+    color: rgb(226, 226, 226);
     font-family: 'Sen', sans-serif;
 }
 

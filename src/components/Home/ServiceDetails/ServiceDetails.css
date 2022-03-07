@@ -1,6 +1,12 @@
+.single-package {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+}
+
 .image-sizing{
     width: 80px;
 }
+
 .button-style {
     width: 130px;
     padding: 7px;
@@ -9,8 +15,9 @@
     color:white;
     transition: 0.5s all
 }
+
 .button-style:hover{
-    transform:scale(0.8);
+    transform: translate(20px);
     border: violet;
     background: tomato;
 }

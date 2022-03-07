@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const HeaderTitle = () => {
     return (
         <div className="container">
-            <div className="text-center text-white ">
+            <div className="text-center pt-3">
                 <div className="pt-5">
                     <Fade right>
                         <h3 className="title-2 pt-5">Welcome To</h3>
@@ -14,14 +14,15 @@ const HeaderTitle = () => {
 
                     <h1 className="title py-4">
                         <Typical
-                            className="text-white typical"
-                            steps={['', 1000, 'PAINTING SERVICE', 500]}
+                            className="typical"
+                            steps={['', 1000, 'PAINTING SERVICE', 200]}
                             loop={Infinity}
                         />
                     </h1>
-                    <h5 className="mb-5 text-secondary">We are always trying to best to satisfied our customer</h5>
+                    <h5 className="mb-5 normal-paragraph-color">We are always trying to best to satisfied our customer</h5>
                 </div>
 
+                {/* button part */}
                 <div>
                     <button className="button ml-4 download-resume">
                         <a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1tCbGlK1deWIneCCLjukzuOLzkpgBdCZq">Download Resume</a>

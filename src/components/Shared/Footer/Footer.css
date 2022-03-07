@@ -1,23 +1,15 @@
-.footer-bg{
+.normal-text-color {
+    color: rgb(204, 201, 201);
+}
+
+.normal-paragraph-color {
+    color: rgb(177, 177, 177);
+}
+
+.footer-background{
     background: rgb(37, 37, 37)
 }
-.footer-area{
-    background-size: cover;
-}
 
-.footer-area li{
-    padding-bottom: 10px;
-}
-
-.social-media .icon{
-    height: 40px;
-    width: 40px;
-    color: #1cc7c1;
-    border-radius: 50%;
-    border: 1px solid #6ACECE;
-    padding: 10px;
-}
-.social-media .active-icon{
-    background-color: #6ACECE ;
-    color:white;
+.image-size {
+    width: 60px;
 }

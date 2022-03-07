@@ -1,9 +1,12 @@
 .background {
-    background: #dde6ef;
+    background: #909191;
+    height: 362px;
 }
+
 .icon{
     margin-right:20px
 }
+
 .cursor{
     cursor:pointer
 }

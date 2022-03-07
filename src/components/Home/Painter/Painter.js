@@ -10,7 +10,7 @@ const Painter = () => {
         },
         {
             painterImg: 'https://i.ibb.co/ZXbBSqg/worker2.jpg',
-            name: "Johan Sing",
+            name: "Rohan Sing",
             position: "Worker"
         },
         {
@@ -20,26 +20,26 @@ const Painter = () => {
         },
         {
             painterImg: 'https://i.ibb.co/DCpPVq2/worker3.jpg',
-            name: "Chris Gayle",
+            name: "Jihan Sing",
             position: "Worker"
         },
         {
             painterImg: 'https://i.ibb.co/gdbhj94/worker5.jpg',
-            name: "Sharmina Hasmin",
+            name: "Sharmina Malik",
             position: "Worker"
         },
         {
             painterImg: 'https://i.ibb.co/Zf7wYtS/Studio-shot-of-young-beautiful-woman-wearing-wite-casual-shirt-with-red-stripes-and-brown-apron-on-y.jpg',
-            name: "Ketrina kaif",
-            position: "Worker"
+            name: "Trinia Mega",
+            position: "designer"
         }
     ]
 
     return (
-        <section className="painter">
-            <div className="container">
-                <div className="text-center mb-3 py-4">
-                    <h1>OUR <span className="font-color">GREATE</span> TEAM</h1>
+        <section>
+            <div className="container py-5 pt-5">
+                <div className="text-center pb-4 normal-text-color">
+                    <h1><span className="font-color">UNIQUE</span> TEAM</h1>
                 </div>
                 <div className="d-flex row">
                     {

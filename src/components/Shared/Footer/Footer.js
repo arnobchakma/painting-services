@@ -1,61 +1,135 @@
 import React from 'react';
 import './Footer.css';
-import FooterDetails from '../FooterDetails/FooterDetails';
 import Fade from 'react-reveal/Fade';
+import logo from '../../../image/logo/Coffee-logo-design-on-transparent-background-PNG.png';
 
 const Footer = () => {
-    const info = [
-        {name: "About Us" , link: "/About-us"},
-        {name: "Contact Us" , link: "/Contact-us"},
-        {name: "Terms of Use" , link: "/Terms-of-use"},
-        {name: "Privacy Policy" , link: "/Privacy-policy"},
-        {name: "Sitemap" , link: "/Sitemap"},
-    ]
-    const customer = [
-        {name: "Login to Account" , link: "/Login"},
-        {name: "Create an Account" , link: "/Create"},
-        {name: "Your Cart" , link: "/Cart"},
-        {name: "Shipping & Packaging" , link: "/Shipping"},
-        {name: "Payment Options" , link: "/Payment"},
-       
-    ]
-    const specialServices = [
-        {name: "Fox Pro Painting" , link: "/Pro-painting"},
-        {name: "ProStyle Painting" , link: "/ProStyle-painting"},
-        {name: "JC Painting" , link: "/JC-painting"},
-        {name: "Olympic Painting Pros" , link: "/Olympic-painting"},
-        {name: "Fillo Painting" , link: "/Fillo-painting"},
-        {name: "CertaPro Painters" , link: "/CertaPro-painters"},
-        {name: "Five Star Painting" , link: "/Five-star-painting"}
-    ]
-    const ourServices = [
-        {name: "Phinney Ridge Painting" , link: "/Phinney-painting"},
-        {name: "Paragon Painting" , link: "/Paragon"},
-        {name: "Miami Painting Services" , link: "/Miami-painting"},
-        {name: "Diesel Painting" , link: "/Diesel-painting"},
-        {name: "Allied Painters" , link: "/Allied-painters"},
-        {name: "EmeraldPro Painting" , link: "/EmeraldPro-painting"},
-        {name: "The Pro Painters" , link: "/The-pro-painters"}
-    ]
 
     return (
-        <footer className="footer-area clear-both">
-            <div className="container pt-5 footer-bg p-3 mt-5">
-                <div className="row pb-5">
-                    <FooterDetails key={1} menuTitle="Info" menuItems={info}/>
-                    <FooterDetails key={2} menuTitle="Our Services" menuItems={ourServices}/>
-                    <FooterDetails key={3} menuTitle="Special Services" menuItems={specialServices}/>
-                    <FooterDetails key={4} menuTitle="Customer" menuItems={customer}> 
-                        <div className="mt-5">
-                            <button className="button-style">Call now</button>
+        <footer className="footer-background">
+            <div className="container-xl p-3 mt-5">
+
+                {/* Footer wrapper */}
+                <div className='row'>
+
+                    {/* first cols */}
+                    <div className='col-lg-3 col-md-6 text-center'>
+                        <div >
+                            <img style={{ width: "100px", height: '100px' }} className="img-fluid mb-5" src={logo} alt="" />
                         </div>
-                    </FooterDetails>
-                </div>
-                <Fade left>
-                    <div className="copyRight text-center text-white">
-                        <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
+
+                        <div className=''>
+                            <div className='flex'>
+                                {/* icon */}
+                                <div className='normal-paragraph-color'>
+                                    <p>Road 3, Block J, Baridhara </p>
+                                    <p> Dhaka 1212</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    <p>arnobchakma05@gmail.com</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    0-159-114-7295
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </Fade>
+
+                    {/* Second cols */}
+                    <div className='col-lg-3 col-md-6 text-center'>
+                        <div className='mt-5 mb-4 normal-text-color'>
+                            <h4>Services</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    <p>Paragon Painting</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    <p>Diesel Painting</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    <p>Allied Painting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Third cols */}
+                    <div className='col-lg-3 col-md-6 text-center'>
+                        <div className='mt-5 mb-4 normal-text-color'>
+                            <h4>Supporting Hours</h4>
+                        </div>
+                        <div className='normal-paragraph-color'>
+                            <p> 24 hours, Daily</p>
+                        </div>
+                    </div>
+
+                    {/* Forth cols */}
+                    <div className='col-lg-3 col-md-6 text-center'>
+                        <div className='mt-5 mb-4 normal-text-color'>
+                            <h4>Services</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    <p>Paragon Painting</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    <p>Diesel Painting</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    {/* icon */}
+                                </div>
+                                <div className='normal-paragraph-color'>
+                                    <p>Allied Painting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/* bottom part */}
+                    <Fade left duration={2000}>
+                        <div className="copyRight text-center normal-paragraph-color py-4">
+                            <p>Copyright {(new Date()).getFullYear()} | Privacy Policy | All Rights Reserved</p>
+                        </div>
+                    </Fade>
+                </div>
+
             </div>
         </footer>
     );

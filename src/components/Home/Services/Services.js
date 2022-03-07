@@ -4,17 +4,18 @@ import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
 const Services = () => {
     const [allService, setAllService] = useState([]);
-console.log(allService)
-   useEffect (() => {
-      fetch('https://cryptic-basin-05682.herokuapp.com/allServices')
-         .then(res => res.json())
-         .then(data => setAllService(data));
-   }, []);
+    
+    useEffect(() => {
+        fetch('https://cryptic-basin-05682.herokuapp.com/allServices')
+            .then(res => res.json())
+            .then(data => setAllService(data));
+    }, []);
+
     return (
-        <section className="services">
-            <div className="container">
-                <div className="text-center my-5">
-                    <h1>OUR PAINTING <span className="font-color">SERVICES</span></h1>
+        <>
+            <div className="container-xl py-5 pt-5">
+                <div className="text-center pb-4 normal-text-color">
+                    <h1>PAINTING <span className="font-color">SERVICES</span></h1>
                 </div>
                 <div className="text-center row">
                     {
@@ -22,7 +23,7 @@ console.log(allService)
                     }
                 </div>
             </div>
-        </section>
+        </>
     );
 };
 

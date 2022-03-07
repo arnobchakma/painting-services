@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import TestimonialDetails from '../TestimonialDetails/TestimonialDetails';
+import './Testimonial.css';
 
 const Testimonial = () => {
     const [loadReview, setLoadReview] = useState([]);
@@ -14,11 +15,11 @@ const Testimonial = () => {
 
     return (
         <section className="testimonial">
-            <div className="container text-center">
-                <div>
+            <div className="container text-center py-5 pt-5">
+                <div className='normal-text-color'>
                     <h1>TESTIMONIAL</h1>
                 </div>
-                <div className="mt-5 row">
+                <div className="mt-4 row">
                     {
                         loadReview.map(testimonial => <TestimonialDetails testimonial={testimonial}></TestimonialDetails>)
                     }
