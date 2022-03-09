@@ -14,7 +14,7 @@ const Dashboard = () => {
    const service = location.state.params;
 
    return (
-      <section className="justify-content-center">
+      <section>
          <div className="container-fluid row ">
             <div className="col-md-3">
                <Sidebar></Sidebar>

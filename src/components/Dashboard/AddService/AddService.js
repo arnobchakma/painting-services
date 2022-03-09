@@ -21,6 +21,7 @@ const AddService = () => {
          },
          body: JSON.stringify(service),
       });
+      window.location.reload();
    };
 
    const imageUpload = e => {
@@ -48,28 +49,30 @@ const AddService = () => {
 
             <div className="col-md-9 ">
                <div className="mx-2 p-2">
-                  <h4 className="font-color">Add Services </h4>
+                  <h4 className="font-color fs-1">Add Services </h4>
+
+                  {/* Handle submit Product */}
                   <form onSubmit={handleSubmit(onSubmit)}>
-                     <label className="form-label">Title:</label>
+                     <label className="form-label normal-text-color">Title:</label>
                      {errors.title && <span>This field is required</span>}
                      <input
                         {...register('title', { required: true })}
-                        className="form-control"
+                        className="form-control "
                      />
                     
-                     <label className="form-label">Service Details:</label>
+                     <label className="form-label normal-text-color pt-4">Service Details:</label>
                      <textarea
                         {...register('details', { required: true })}
                         className="form-control"
                         rows="4"
                      ></textarea>{' '}
                      {errors.review && <span>This field is required</span>}
-                     <label className="form-label">Image:</label>
+                     <label className="form-label normal-text-color pt-4">Image:</label>
                      {errors.image && <span>This field is required</span>}
 
                      <input className="form-control" type='file' onChange={imageUpload}/>
                      <br />
-                     <button className="button-style" type='submit'>Button</button>
+                     <button className="button-style" type='submit'>Add Service</button>
                   </form>
                </div>
             </div>

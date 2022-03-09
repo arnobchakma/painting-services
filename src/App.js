@@ -1,8 +1,8 @@
 import './App.css';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route
+   BrowserRouter as Router,
+   Switch,
+   Route
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import { createContext } from 'react';
@@ -22,67 +22,69 @@ import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import ScrollToTop from './components/scroll/ScrollToTop';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export const UserContext = createContext();
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState();
+   const [loggedInUser, setLoggedInUser] = useState();
 
-  return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <div className="main-wrapper">
-        <Router>
-          <ScrollToTop />
-          <NavBar></NavBar>
-          <Switch>
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
-            <Route exact path="/home">
-              <Home></Home>
-            </Route>
-            <Route path="/login">
-              <Login></Login>
-            </Route>
-            <Route path="/signup">
-              <Signup></Signup>
-            </Route>
-            <PrivateRoute path="/addService">
-              <AddService></AddService>
-            </PrivateRoute>
-            <PrivateRoute path="/common">
-              <CommonBar></CommonBar>
-            </PrivateRoute>
-            <PrivateRoute path="/services">
-              <Services></Services>
-            </PrivateRoute>
-            <PrivateRoute path="/addAnAdmin">
-              <AddAdmin></AddAdmin>
-            </PrivateRoute>
-            <PrivateRoute path="/adminPanel">
-              <AllAdmins></AllAdmins>
-            </PrivateRoute>
-            <PrivateRoute path="/review">
-              <Testimonial></Testimonial>
-            </PrivateRoute>
-            <PrivateRoute path="/placeOrder">
-              <Dashboard></Dashboard>
-            </PrivateRoute>
-            <PrivateRoute path="/myOrder">
-              <MyOrder></MyOrder>
-            </PrivateRoute>
-            <PrivateRoute path="/order">
-              <Orders></Orders>
-            </PrivateRoute>
-            <Route path="/addReview">
-              <AddReview></AddReview>
-            </Route>
+   return (
+      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+         <div className="main-wrapper">
+            <Router>
+               <ScrollToTop />
+               <NavBar></NavBar>
+               <Switch>
+                  <Route exact path="/">
+                     <Home></Home>
+                  </Route>
+                  <Route exact path="/home">
+                     <Home></Home>
+                  </Route>
+                  <Route path="/login">
+                     <Login></Login>
+                  </Route>
+                  <Route path="/signup">
+                     <Signup></Signup>
+                  </Route>
+                  <PrivateRoute path="/addService">
+                     <AddService></AddService>
+                  </PrivateRoute>
+                  <PrivateRoute path="/common">
+                     <CommonBar></CommonBar>
+                  </PrivateRoute>
+                  <PrivateRoute path="/services">
+                     <Services></Services>
+                  </PrivateRoute>
+                  <PrivateRoute path="/addAnAdmin">
+                     <AddAdmin></AddAdmin>
+                  </PrivateRoute>
+                  <PrivateRoute path="/adminPanel">
+                     <AllAdmins></AllAdmins>
+                  </PrivateRoute>
+                  <PrivateRoute path="/review">
+                     <Testimonial></Testimonial>
+                  </PrivateRoute>
+                  <PrivateRoute path="/placeOrder">
+                     <Dashboard></Dashboard>
+                  </PrivateRoute>
+                  <PrivateRoute path="/myOrder">
+                     <MyOrder></MyOrder>
+                  </PrivateRoute>
+                  <PrivateRoute path="/order">
+                     <Orders></Orders>
+                  </PrivateRoute>
+                  <Route path="/addReview">
+                     <AddReview></AddReview>
+                  </Route>
 
-          </Switch>
-        </Router>
-      </div>
-    </UserContext.Provider>
-  );
+               </Switch>
+            </Router>
+         </div>
+      </UserContext.Provider>
+   );
 }
 
 export default App;

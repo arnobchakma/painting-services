@@ -7,7 +7,9 @@ const LoadAllAdmin = ({ admin }) => {
    const [email, setEmail] = useState();
 
    const history = useHistory();
-   const deleteAdmin = anAdmin => {
+
+   // Handle Delete admin part
+   const deleteAdmin = (anAdmin) => {
       const { email } = anAdmin;
       setEmail(email);
       window.location.reload();

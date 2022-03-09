@@ -2,6 +2,7 @@ import React from 'react';
 import { Dropdown } from 'react-bootstrap';
 
 const LoadClientOrders = ({ order }) => {
+   
    const handleStatus = (id, e) => {
       const newStatus = e.target.innerText;
       fetch('https://cryptic-basin-05682.herokuapp.com/updateOrder', {
@@ -16,9 +17,9 @@ const LoadClientOrders = ({ order }) => {
          <tr>
             <td>{order.email}</td>
             <td>{order.title}</td>
-            <td>{order.paymentMethod.id}</td>
+            {/* <td>{order.paymentMethod.id}</td> */}
             <td>
-               <button className={order.status} button-syle disabled="disabled">
+               <button className={order.status} button-style disabled="disabled">
                   {order.status}
                </button>
             </td>

@@ -21,7 +21,7 @@ const NavBar = () => {
                   <Link className='text-white text-decoration-none' to="/home"> Home </Link>
                   <Link className='px-5 text-white text-decoration-none' to="/services"> Services </Link>
                   <Link className='text-white text-decoration-none' to="/common"> Dashboard </Link>
-                  <Link className='px-5 text-white text-decoration-none' to="/review"> Review </Link>
+                  <Link className='px-5 text-white text-decoration-none' to="/addReview"> Review </Link>
                   <Link className='text-white text-decoration-none' to="/login"> Login </Link>
                </div>
             </div>

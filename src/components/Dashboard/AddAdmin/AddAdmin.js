@@ -31,15 +31,15 @@ const AddAdmin = () => {
             <div className="col-md-9">
                <form onSubmit={handleSubmit(onSubmit)}>
                   <table>
-                     <h3 className="mt-3 fw-bold font-color">Manage Admin</h3>
+                     <h3 className="my-5 fs-1 font-color">Manage Admin</h3>
                      <tr>
                         <td>
-                           <label htmlFor="name">Name:</label>
+                           <label htmlFor="name" className='normal-text-color'>Name:</label>
                         </td>
                         <td>
                            <input
-                              placeholder="Write Your Name"
-                              className="px-5 mb-2"
+                              placeholder="Name"
+                              className="px-5 py-2 mb-4"
                               type="text"
                               name="name"
                               {...register('name')}
@@ -48,12 +48,12 @@ const AddAdmin = () => {
                      </tr>
                      <tr>
                         <td>
-                           <label htmlFor="name">Email:</label>
+                           <label htmlFor="name" className='normal-text-color'>Email:</label>
                         </td>
                         <td>
                            <input
-                              className="px-5"
-                              placeholder="Write Your Email"
+                              className="px-5 py-2"
+                              placeholder="Email"
                               type="email"
                               name="email"
                               {...register('email', { required: true })}

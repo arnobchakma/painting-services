@@ -20,16 +20,16 @@ const AllAdmins = () => {
             </div>
             <div className="col-md-9 ">
                <div id="deleteTable">
-                  <h3 className="mt-3 fw-bold font-color">Admin Panel</h3>
+                  <h3 className="my-5 fs-1 font-color">All Admin</h3>
                   <Table bordered>
-                     <thead>
+                     <thead className='normal-text-color'>
                         <tr>
                            <th>Name</th>
                            <th>Email</th>
                            <th>Edit And Delete</th>
                         </tr>
                      </thead>
-                     <tbody>
+                     <tbody className='normal-text-color'>
                         {allAdmin.map(admin => (
                            <LoadAllAdmin admin={admin}></LoadAllAdmin>
                         ))}

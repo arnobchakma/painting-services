@@ -19,8 +19,9 @@ const Sidebar = () => {
    const [admin, setAdmin] = useState([]);
 
    const checkMail = loggedInUser && loggedInUser?.email;
+   
    useEffect(() => {
-      fetch('https://cryptic-basin-05682.herokuapp.com/checkMail', {
+      fetch('https://cryptic-basin-05682.herokuapp.com/', {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json',
@@ -54,13 +55,13 @@ const Sidebar = () => {
                      to="/services"
                      className="text-white text-decoration-none"
                   >
-                     <FontAwesomeIcon icon={faTaxi} /> Services
+                     <FontAwesomeIcon icon={faTaxi} /> All Services
                   </Link>
                </li>
 
                <li>
                   <Link to="/order" className="text-white text-decoration-none">
-                     <FontAwesomeIcon icon={faJediOrder} /> Order Details
+                     <FontAwesomeIcon icon={faJediOrder} /> My Orders
                   </Link>
                </li>
 
@@ -87,7 +88,7 @@ const Sidebar = () => {
                      to="/adminPanel"
                      className="text-white text-decoration-none"
                   >
-                     <FontAwesomeIcon icon={faToolbox} /> Admin Panel
+                     <FontAwesomeIcon icon={faToolbox} /> All Admin
                   </Link>
                </li>
 

@@ -3,30 +3,48 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import TestimonialDetails from '../TestimonialDetails/TestimonialDetails';
 import './Testimonial.css';
+import Slider from "react-slick";
 
 const Testimonial = () => {
-    const [loadReview, setLoadReview] = useState([]);
+   const [loadReview, setLoadReview] = useState([]);
 
-    useEffect(() => {
-       fetch('https://cryptic-basin-05682.herokuapp.com/loadReviews')
-          .then(res => res.json())
-          .then(data => setLoadReview(data));
-    }, []);
+   useEffect(() => {
+      fetch('https://cryptic-basin-05682.herokuapp.com/loadReviews')
+         .then(res => res.json())
+         .then(data => setLoadReview(data));
+   }, []);
 
-    return (
-        <section className="testimonial">
-            <div className="container text-center py-5 pt-5">
-                <div className='normal-text-color'>
-                    <h1>TESTIMONIAL</h1>
-                </div>
-                <div className="mt-4 row">
-                    {
-                        loadReview.map(testimonial => <TestimonialDetails testimonial={testimonial}></TestimonialDetails>)
-                    }
-                </div>
+   const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover: true,
+   };
+
+   return (
+      <section className="testimonial">
+         <div className="container text-center py-5 pt-5">
+            <div className='normal-text-color'>
+               <h1>TESTIMONIAL</h1>
             </div>
-        </section>
-    );
+            <div className="mt-4 row">
+               <Slider {...settings}>
+                  {
+                     loadReview.map(testimonial => <TestimonialDetails testimonial={testimonial} key={testimonial}></TestimonialDetails>)
+
+                  }
+
+                  <div className='text-white py-5 bg-info'>
+                     <h3>1</h3>
+                  </div>
+               </Slider>
+            </div>
+         </div>
+      </section>
+   );
 };
 
 export default Testimonial;
