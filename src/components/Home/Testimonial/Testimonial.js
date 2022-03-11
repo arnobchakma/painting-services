@@ -36,10 +36,6 @@ const Testimonial = () => {
                      loadReview.map(testimonial => <TestimonialDetails testimonial={testimonial} key={testimonial}></TestimonialDetails>)
 
                   }
-
-                  <div className='text-white py-5 bg-info'>
-                     <h3>1</h3>
-                  </div>
                </Slider>
             </div>
          </div>

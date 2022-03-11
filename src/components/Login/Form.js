@@ -16,7 +16,7 @@ const Form = (props) => {
                 <label htmlFor="email">Email</label>
                 <input type="text" className={user.email ? "form-control is-valid" : "form-control is-invalid"} onChange={handleChange} name="email" required />
             </div>
-            <div className="form-group">
+            <div className="form-group mt-3">
                 <label htmlFor="password">Password</label>
                 <input type="password" className={user.password ? "form-control is-valid" : "form-control is-invalid"} onChange={handleChange} name="password" required />
             </div>

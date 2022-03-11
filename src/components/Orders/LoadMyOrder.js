@@ -3,10 +3,10 @@ import React from 'react';
 const LoadMyOrder = ({ orders }) => {
    return (
       <>
-         <tr>
+         <tr className="normal-text-color">
             <td>{orders.email}</td>
             <td>{orders.title}</td>
-            <td>{orders.paymentMethod.id}</td>
+            {/* <td>{orders.paymentMethod.id}</td> */}
             <td>
                <button className={orders.status} disabled="disabled">
                   {orders.status}

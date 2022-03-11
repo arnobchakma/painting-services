@@ -21,7 +21,6 @@ import MyOrder from './components/Orders/MyOrder';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
-import ScrollToTop from './components/scroll/ScrollToTop';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -34,7 +33,6 @@ function App() {
       <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
          <div className="main-wrapper">
             <Router>
-               <ScrollToTop />
                <NavBar></NavBar>
                <Switch>
                   <Route exact path="/">

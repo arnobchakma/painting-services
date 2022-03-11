@@ -14,7 +14,7 @@ const LoadClientOrders = ({ order }) => {
 
    return (
       <>
-         <tr>
+         <tr className='normal-text-color'>
             <td>{order.email}</td>
             <td>{order.title}</td>
             {/* <td>{order.paymentMethod.id}</td> */}

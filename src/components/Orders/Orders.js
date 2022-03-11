@@ -25,10 +25,10 @@ const Orders = () => {
                <h3 className="mt-3 fw-bold font-color">Client Order Details</h3>
                <Table bordered>
                   <thead>
-                     <tr>
+                     <tr className='normal-text-color'>
                         <th>Email</th>
                         <th>Orders</th>
-                        <th>Payment ID</th>
+                        {/* <th>Payment ID</th> */}
                         <th>Process</th>
                         <th>Action</th>
                      </tr>

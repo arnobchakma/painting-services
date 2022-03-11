@@ -9,15 +9,15 @@ const Form = (props) => {
                 <label htmlFor="name">Name</label>
                 <input type="text" className={error.name ? "form-control is-valid" : "form-control is-invalid"} name="name" onChange={handleChange} required />
             </div>
-            <div className="form-group">
+            <div className="form-group mt-3">
                 <label htmlFor="email">Email</label>
                 <input type="email" className={error.email ? "form-control is-valid" : "form-control is-invalid"} name="email" onChange={handleChange} required />
             </div>
-            <div className="form-group">
+            <div className="form-group mt-3">
                 <label htmlFor="password">Password</label>
                 <input type="password" className={error.password ? "form-control is-valid" : "form-control is-invalid"} name="password" onChange={handleChange} required />
             </div>
-            <div className="form-group">
+            <div className="form-group mt-3">
                 <label htmlFor="confirm-password">Confirm Password</label>
                 <input type="password" className={error.confirmPass ? "form-control is-valid" : "form-control is-invalid"} name="confirmPass" onChange={handleChange} required />
             </div>
@@ -30,7 +30,7 @@ const Form = (props) => {
             </div>
 
             <div className="form-group">
-                <button type="submit" className="btn btn-success submitBtn">
+                <button type="submit" className="btn btn-primary submitBtn">
                     {
                         loading ? <div class="spinner-border" role="status"></div> : "Submit"
                     }

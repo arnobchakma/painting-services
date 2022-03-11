@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import Sidebar from '../../Shared/Sidebar/Sidebar';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import Sidebar from '../../Shared/Sidebar/Sidebar';
 
 const AddReview = () => {
    const [images, setImages] = useState(null);
+
    const {
       register,
       handleSubmit,
@@ -14,7 +15,6 @@ const AddReview = () => {
    // Handle Form Submit
    const onSubmit = e => {
       const data = { ...e, image: images };
-
       fetch('https://cryptic-basin-05682.herokuapp.com/addReviews', {
          method: 'POST',
          headers: {
@@ -22,7 +22,6 @@ const AddReview = () => {
          },
          body: JSON.stringify({ data }),
       });
-
       window.location.reload();
    };
 
@@ -30,7 +29,7 @@ const AddReview = () => {
    const imageUpload = e => {
       e.preventDefault();
       const formData = new FormData();
-      formData.set('key', '1be513e26caa61a1ce047059c32aa318');
+      formData.set('key', '7599ed5a49272ab4580b36f02f0f45d7');
       formData.append('image', e.target.files[0]);
       axios
          .post('https://api.imgbb.com/1/upload', formData)
@@ -54,19 +53,19 @@ const AddReview = () => {
 
                <form onSubmit={handleSubmit(onSubmit)}>
                   <label className="form-label normal-text-color">Your Name:</label>
-                  {errors.author && <span>This field is required</span>}
                   <input
                      {...register('author', { required: true })}
                      id="name"
                      className="form-control"
+                     required
                   />
 
                   <label className="form-label normal-text-color mt-4">Your Position:</label>
-                  {errors.position && <span>This field is required</span>}
                   <input
                      {...register('position', { required: true })}
                      id="name"
                      className="form-control"
+                     required
                   />
 
                   <label className="form-label block normal-text-color mt-4">Add Your Review:</label>
@@ -75,10 +74,10 @@ const AddReview = () => {
                      className="form-control"
                      rows="4"
                      id="comments"
+                     required
                   ></textarea>{' '}
-                  {errors.review && <span>This field is required</span>}
 
-                  <input type="file" onChange={imageUpload} className="my-4" /> <br />
+                  <input type="file" onChange={imageUpload} className="my-4 d-block" />
                   <button className="p-1" type="submit" >Review</button>
                </form>
             </div>

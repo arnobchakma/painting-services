@@ -12,6 +12,7 @@ const AddService = () => {
       formState: { errors },
    } = useForm();
  
+   // Handle form submit
    const onSubmit = data => {
       const service = {...data, image:image}
       fetch('https://cryptic-basin-05682.herokuapp.com/addServices', {
@@ -23,16 +24,16 @@ const AddService = () => {
       });
       window.location.reload();
    };
-
+ 
+   // Upload image handling
    const imageUpload = e => {
-      console.log(e)
+      e.preventDefault();
       const formData = new FormData();
       formData.set('key', '7599ed5a49272ab4580b36f02f0f45d7');
       formData.append('image', e.target.files[0]);
       axios
          .post('https://api.imgbb.com/1/upload', formData)
          .then(res => {
-            console.log(res.data.data.display_url)
             setImage(res.data.data.display_url);
          })
          .catch(error => {
