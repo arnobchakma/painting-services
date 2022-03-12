@@ -1,7 +1,12 @@
 .navbar-background {
-    background-color: rgb(39, 35, 33);
+    background-color: rgb(56, 54, 53);
 }
 
 .image-width {
     width: 60px;
+}
+.logo-color {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
 }

@@ -18,9 +18,11 @@ const Footer = () => {
                             <img style={{ width: "100px", height: '100px' }} className="img-fluid mb-5" src={logo} alt="" />
                         </div>
 
-                        <div className=''>
+                        <div>
                             <div className='flex'>
-                                {/* icon */}
+                                <div>
+                                    {/* icons */}
+                                </div>
                                 <div className='normal-paragraph-color'>
                                     <p>Road 3, Block J, Baridhara </p>
                                     <p> Dhaka 1212</p>

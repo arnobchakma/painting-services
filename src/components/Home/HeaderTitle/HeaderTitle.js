@@ -9,7 +9,7 @@ const HeaderTitle = () => {
             <div className="text-center pt-3">
                 <div className="pt-5">
                     <Fade right>
-                        <h3 className="title-2 pt-5">Welcome To</h3>
+                        <h3 className="title-2 fs-md-5 pt-5">Welcome To</h3>
                     </Fade>
 
                     <h1 className="title py-4">
@@ -23,12 +23,15 @@ const HeaderTitle = () => {
                 </div>
 
                 {/* button part */}
-                <div>
-                    <button className="button ml-4 download-resume">
-                        <a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1tCbGlK1deWIneCCLjukzuOLzkpgBdCZq">Download Resume</a>
-                    </button>
-
-                    <button className="right-btn px-5"><a href="https://arnob-portfolio.web.app/">See portfolio</a> </button>
+                <div className='d-md-flex d-block justify-content-center align-items-center gap-3'>
+                    <div>
+                        <button className="left-button px-4">
+                            <a target="_blank" href="https://drive.google.com/uc?export=download&amp;id=1tCbGlK1deWIneCCLjukzuOLzkpgBdCZq">Download Resume</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button className="right-btn px-5 mt-4 mt-md-0"><a href="https://arnob-portfolio.web.app/">See portfolio</a> </button>
+                    </div>
                 </div>
             </div>
         </div>

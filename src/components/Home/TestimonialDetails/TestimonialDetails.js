@@ -6,10 +6,10 @@ const TestimonialDetails = ({ testimonial }) => {
       <div>
          <div className=" d-flex text-center p-3">
             <div>
-               <img style={{ width: "70%" }} src={testimonial.image} alt="" />
+               <img className='image-sizing' src={testimonial.image} alt="" />
             </div>
 
-            <div className="text-center">
+            <div>
                <h5 className="font-color">{testimonial.author}</h5>
                <p className="normal-paragraph-color">{testimonial.position}</p>
             </div>
